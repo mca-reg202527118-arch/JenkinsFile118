@@ -1,10 +1,11 @@
-pipeline{
- agent any
-stages{
-     stage('Github Build'){
-          steps{
-             echo "Code from Github is running"
+pipeline {
+    agent any
+
+    stages {
+        stage('Github Build') {
+            steps {
+                echo 'Code from Github is running'
             }
-         }
-      }
+        }
+    }
 }
